@@ -1,0 +1,136 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/* ----------------
+    common styles
+----------------- */
+:root {
+    --background-color: rgba(255, 144, 14, 0.1);
+    --title-color: #131313;
+    --text-color: #727272;
+    --btn-color: #FF900E;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+.section-desc {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color);
+}
+.btn-primary {
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 20px;
+    background: var(--btn-color);
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    text-align: center;
+}
+/* -------------------------
+    title and navbar styles
+-------------------------- */
+.header {
+    background: var(--background-color);
+}
+.container {
+    margin: 0 160px;
+}
+nav {
+    margin-bottom: 100px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--title-color);
+}
+ul {
+    display: flex;
+    align-items: center;
+}
+ul li {
+    padding-left: 40px;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+}
+
+/* ---------------
+    banner styles
+---------------- */
+.banner-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--title-color);
+}
+
+.banner-desc {
+    margin: 30px 0;
+    padding: 0 5px;
+    text-align: center;
+}
+.btn-exp {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.banner {
+padding-bottom: 45px;
+}
+.banner > img {
+    width: 100%;
+}
+
+
+/* --------------------
+    Responsive Layout 
+---------------------*/
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+    .container {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    nav, ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        padding: 20px 0;
+    }
+
+
+
+    .hide {
+        display: none;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .container {
+        padding: 0;
+        margin: 0 20px;
+        width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+}
