@@ -22,6 +22,11 @@ body {
 .container {
     margin: 0 160px;
 }
+.section-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--title-color);
+}
 .section-desc {
     margin: 24px 0;
     font-weight: 400;
@@ -178,12 +183,71 @@ width: 100%;
     bottom: 80px;
 }
 
-/* ------------------
-    architect styles 
---------------------*/
+/* --------------------
+    achievement styles 
+----------------------*/
 .facts-container {
+    margin-top: 50px;
+}
+.work-cards {
+    margin-top: 76px;
+    display: flex;
+    justify-content: space-around;
+}
+.mini-card {
+    padding: 40px 30px;
+    text-align: center;
+    border: 1px solid var(--btn-color);
+}
+.card-logo {
+    width: 40px;
+}
+.mini-card-title {
+    margin: 5px 0;
+    font-weight: 600;
+    font-size: 45px;
+    color: var(--title-color);
+}
+.mini-card-desc {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+/* -----------------
+    sponsors styles 
+-------------------*/
+.sponsor-container {
+    margin-top: 150px;
+}
+.sponsor-info {
+    text-align: center;
+}
+.sponsor-brand {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-logo {
+    width: 150px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+/* ----------------------------
+    contact and footer styles 
+-----------------------------*/
+footer {
+    background: #FFF4E7;
+}
+.contact-container {
     margin-top: 130px;
 }
+
+
+
+
+
 
 
 
@@ -199,20 +263,20 @@ width: 100%;
         margin: 0;
         width: 100%;
     }
-/* header  */
     nav, ul{
         flex-direction: column;
         align-items: center;
     }
-
     ul li {
         padding: 20px 0;
     }
-
-/* features */
     .features-container,
-    .architect-container {
+    .architect-container,
+    .work-cards,
+    .sponsor-brand {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
     }
     .team-members {
         grid-template-columns: 1fr;
@@ -224,7 +288,6 @@ width: 100%;
     #btn {
         text-align: center;
     }
-/* architect */
     .section-desc {
         padding: 0 10px;
     }
@@ -233,12 +296,14 @@ width: 100%;
         left: 0;
         top: 0;
     }
+    .brand-logo {
+        width: 70%;
+    }
 
 
-
-
-
-
+ .h {
+    display: none;
+ }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -249,13 +314,26 @@ width: 100%;
         width: 100%;
     }
 /* features */
-    .features-container {
+    .features-container,
+    .architect-container {
         flex-direction: column;
-    }
-    .team-members {
-        /* grid-template-columns: 1fr; */
     }
     #btn {
         text-align: center;
+    }
+    #big-btn {
+        margin: 20px 50px;
+        left: 0;
+        top: 0;
+    }
+.btn-year {
+    width: 100%;
+}
+
+
+
+
+    .h {
+        display: none;
     }
 }
