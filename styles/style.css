@@ -198,6 +198,12 @@ width: 100%;
     padding: 40px 30px;
     text-align: center;
     border: 1px solid var(--btn-color);
+    transition: transform 1s;
+}
+
+.mini-card:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.06);
 }
 .card-logo {
     width: 40px;
@@ -234,6 +240,7 @@ width: 100%;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
+
 /* ----------------------------
     contact and footer styles 
 -----------------------------*/
@@ -242,15 +249,42 @@ footer {
 }
 .contact-container {
     margin-top: 130px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
 }
-
-
-
-
-
-
-
-
+.social-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--text-color);
+}
+.social-desc {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--text-color);
+}
+.big-num {
+    font-size: 1.2em;
+}
+input[type="email"] {
+    margin-bottom:20px;
+    padding: 10px 10px;
+    width: 100%;
+    border: 2px solid var(--btn-color);
+    border-radius: 3px;
+}
+.copyright {
+    margin-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--text-color);
+}
 
 
 /* --------------------
@@ -273,7 +307,8 @@ footer {
     .features-container,
     .architect-container,
     .work-cards,
-    .sponsor-brand {
+    .sponsor-brand,
+    .contact-container {
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -299,11 +334,9 @@ footer {
     .brand-logo {
         width: 70%;
     }
-
-
- .h {
-    display: none;
- }
+    .contact-container {
+        row-gap: 40px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -313,10 +346,14 @@ footer {
         margin: 0 20px;
         width: 100%;
     }
-/* features */
     .features-container,
-    .architect-container {
+    .architect-container,
+    .work-cards,
+    .sponsor-brand,
+    .contact-container {
         flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
     #btn {
         text-align: center;
@@ -326,14 +363,7 @@ footer {
         left: 0;
         top: 0;
     }
-.btn-year {
-    width: 100%;
-}
-
-
-
-
-    .h {
-        display: none;
+    .btn-year {
+        width: 100%;
     }
 }
